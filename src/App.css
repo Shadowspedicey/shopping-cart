@@ -4,6 +4,8 @@
 
 	display: flex;
 	flex-direction: column;
+
+	position: relative;
 }
 
 #navbar
@@ -84,4 +86,37 @@
 {
 	text-decoration: none;
 	color: #E3B261;
+}
+
+#footer
+{
+	width: 100%;
+	height: 50px;
+	background-color: hsl(0, 0%, 90%);
+
+	font-size: 1.5em;
+	font-weight: 600;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	bottom: 0;
+}
+
+#footer > a
+{
+	transition: color 0.125s ease-in-out;
+	color: black;
+
+	display: flex;
+	align-items: center;
+
+	margin-left: 0.5rem;
+}
+
+#footer > a:hover
+{
+	color: #DC3C4D;
 }
