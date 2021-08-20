@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../images/Logo.png"
+import Logo from "../images/Logo.png";
 
 const Navbar = () =>
 {
@@ -11,7 +11,7 @@ const Navbar = () =>
 				<li><Link to="/shop">Shop</Link></li>
 			</ul>
 		</nav>
-	)
-}
+	);
+};
 
 export default Navbar;

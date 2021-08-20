@@ -1,3 +1,11 @@
+.App
+{
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+
 #navbar
 {
 	width: 100%;
@@ -38,4 +46,42 @@
 	font-size: 2.25em;
 	font-family: sans-serif;
 	font-weight: bold;
+}
+
+#home
+{
+	height: 100%;
+	background-color: #DC3C4D;
+
+	color: black;
+	text-align: center;
+	font-size: 3.25em;
+	font-family: monospace;
+	font-weight: 600;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+
+	padding: 0 7.5rem;
+}
+
+.shop-link
+{
+	transition: color 0.2s ease-in-out;
+
+	color: hsl(0, 0%, 90%);
+	text-decoration: none;
+}
+
+.shop-link:hover
+{
+	color: black;
+}
+
+#odin
+{
+	text-decoration: none;
+	color: #E3B261;
 }

@@ -1,16 +1,19 @@
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import './App.css';
+import Home from "./components/Home";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
+	return (
+		<div className="App">
 			<Router>
 				<Navbar/>
-
+				<Switch>
+					<Route exact path="/" component={Home}></Route>
+				</Switch>
 			</Router>
-    </div>
-  );
+		</div>
+	);
 }
 
 export default App;

@@ -5,10 +5,16 @@
   box-sizing: border-box;
 }
 
-body
+html, body
 {
+	height: 100%;
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   margin: 0;
+}
+
+#root
+{
+	height: 100%;
 }
