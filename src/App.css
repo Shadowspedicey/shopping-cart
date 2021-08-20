@@ -88,6 +88,71 @@
 	color: #E3B261;
 }
 
+#shop
+{
+	min-height: 100%;
+	background-color: hsl(0, 0%, 80%);
+
+	flex-grow: 1;
+}
+
+#shop-nav
+{
+	height: 125px;
+	background-color: #DC3C4D;
+}
+
+.nav-shop-sections
+{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0 5rem;
+}
+
+.selected
+{
+	background-color: hsl(0, 0%, 80%);
+}
+
+.nav-shop-sections li
+{
+	width: max-content;
+	height: 100%;
+	list-style: none;
+
+	display: flex;
+	align-items: center;
+
+	padding: 0 1rem;
+}
+
+.nav-shop-sections a
+{
+	height: 100%;
+	text-decoration: none;
+	color: hsl(0, 0%, 25%);
+
+	display: flex;
+	align-items: center;
+}
+
+.nav-shop-section-text
+{
+	font-size: 3em;
+	font-family: monospace;
+	font-weight: 700;
+
+	margin-left: 1rem;
+}
+
+.nav-shop-section-img
+{
+	height: 75px;
+}
+
 #footer
 {
 	width: 100%;
