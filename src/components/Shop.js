@@ -1,8 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Switch, Route } from "react-router-dom";
 import Monitor from "../images/Monitor.png";
 import Keyboard from "../images/Keyboard.png";
 import Mouse from "../images/Mouse.png";
 import Headphones from "../images/Headphones.png";
+
+import MonitorsSection from "./MonitorsSection";
 
 const Shop = () =>
 {
@@ -36,6 +38,9 @@ const Shop = () =>
 					</NavLink>
 				</ul>
 			</nav>
+			<Switch>
+				<Route exact path="/shop/monitors" component={MonitorsSection}></Route>
+			</Switch>
 		</div>
 	);
 };
