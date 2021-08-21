@@ -14,7 +14,7 @@ const ShopItem = props =>
 				)
 			}
 			<h2 className="price">£ {props.info.price.toFixed(2)}</h2>
-			<button className="add-to-cart">Add to cart</button>
+			<button className="add-to-cart" onClick={() => props.addToCart(props.info)}>Add to cart</button>
 		</div>
 	);
 };

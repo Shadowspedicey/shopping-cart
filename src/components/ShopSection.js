@@ -12,7 +12,7 @@ const ShopSection = props =>
 		<div className="shop-section">
 			{
 				items.map(item =>
-					<ShopItem info={item} key={uniqid()}/>
+					<ShopItem info={item} key={uniqid()} addToCart={props.addToCart}/>
 				)
 			}
 		</div>

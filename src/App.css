@@ -18,6 +18,8 @@
 	justify-content: space-between;
 	align-items: center;
 
+	position: relative;
+
 	padding: 0 10rem;
 }
 
@@ -48,6 +50,43 @@
 	font-size: 2.25em;
 	font-family: sans-serif;
 	font-weight: bold;
+}
+
+#navbar > .nav-cart
+{
+	position: absolute;
+	right: 2.5rem;
+}
+
+.nav-cart-container
+{
+	width: 50px;
+	height: 50px;
+
+	display: flex;
+	justify-content: center;
+
+	position: relative;
+}
+
+.nav-cart-container > span
+{
+	color: #DC3C4D;
+	text-align: center;
+	font-size: 1.75em;
+	font-weight: bold;
+	user-select: none;
+
+	position: absolute;
+	top: 0;
+	right: 52.5%;
+	transform: translateX(50%);
+}
+
+.nav-cart svg
+{
+	width: 50px;
+	height: 50px;
 }
 
 #home
