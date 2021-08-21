@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import uniqid from "uniqid";
 import ShopItem from "./ShopItem";
 
 const ShopSection = props =>
 {
-	const items = useState(props.data)[0];
+	const [items, setItems] = useState(props.data);
+
+	useEffect(() => setItems(props.data), [props.data]);
 
 	return(
 		<div className="shop-section">
