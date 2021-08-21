@@ -257,6 +257,61 @@
 	margin: 0.25rem;
 }
 
+.add-to-cart-container
+{
+	max-height: 47px;
+
+	display: flex;
+
+	position: relative;
+	right: 12.5px;
+}
+
+.add-to-cart-container > .quantity-container
+{
+	width: 25px;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.quantity-container button
+{
+	height: 30%;
+
+	font-weight: bold;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0;
+	border: none;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button 
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.quantity-container input
+{
+	width: 100%;
+	height: 45%;
+
+	text-align: center;
+	font-size: 1.25em;
+
+	padding: 0;
+}
+
 .add-to-cart
 {
 	background-color: #DC3C4D;

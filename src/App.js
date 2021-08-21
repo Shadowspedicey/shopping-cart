@@ -8,17 +8,21 @@ import "./App.css";
 
 function App() 
 {
-	const [cart, setCart] = useState([]);
+	const [cart, setCart] = useState({nOfItems: 0, items: []});
 
-	const addToCart = item =>
+	const addToCart = (item, quantity) =>
 	{
-		if (cart.includes(item)) return;
+		if (cart.items.includes(item)) return;
 		setCart
 		(
-			[
-				...cart,
-				item,
-			]
+			{
+				nOfItems: cart.nOfItems + quantity,
+				items:
+				[
+					...cart.items,
+					item,
+				]
+			}
 		);
 	};
 

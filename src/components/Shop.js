@@ -44,9 +44,9 @@ const Shop = props =>
 			</nav>
 			<Switch>
 				<Route exact path="/shop/monitors"><ShopSection data={monitorsData} addToCart={props.addToCart}/></Route>
-				<Route exact path="/shop/keyboards"><ShopSection data={keyboardsData}/></Route>
-				<Route exact path="/shop/mouses"><ShopSection data={mousesData}/></Route>
-				<Route exact path="/shop/headphones"><ShopSection data={headphonesData}/></Route>
+				<Route exact path="/shop/keyboards"><ShopSection data={keyboardsData}  addToCart={props.addToCart}/></Route>
+				<Route exact path="/shop/mouses"><ShopSection data={mousesData}addToCart={props.addToCart}/></Route>
+				<Route exact path="/shop/headphones"><ShopSection data={headphonesData} addToCart={props.addToCart}/></Route>
 			</Switch>
 		</div>
 	);
