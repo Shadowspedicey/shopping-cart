@@ -4,7 +4,8 @@ import Keyboard from "../images/Keyboard.png";
 import Mouse from "../images/Mouse.png";
 import Headphones from "../images/Headphones.png";
 
-import MonitorsSection from "./MonitorsSection";
+import ShopSection from "./ShopSection";
+import monitorsData from "./data/monitors.json";
 
 const Shop = () =>
 {
@@ -39,7 +40,7 @@ const Shop = () =>
 				</ul>
 			</nav>
 			<Switch>
-				<Route exact path="/shop/monitors" component={MonitorsSection}></Route>
+				<Route exact path="/shop/monitors"><ShopSection data={monitorsData}/></Route>
 			</Switch>
 		</div>
 	);
