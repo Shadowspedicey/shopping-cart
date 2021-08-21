@@ -328,6 +328,79 @@ input[type=number] {
 	background-color: hsl(354, 70%, 45%)
 }
 
+#cart
+{
+	background-color: #DC3C4D;
+	flex-grow: 1;
+
+	padding: 2.5rem 0;
+}
+
+.cart-item.cart-header, .cart-item.cart-footer
+{
+	background-color: hsl(0, 0%, 75%);
+}
+
+.cart-item.cart-header > .item-name,
+.cart-item.cart-header > .item-quantity,
+.cart-item.cart-header > .item-price,
+.cart-item.cart-footer > .total
+{
+	color: black;
+	font-size: 2.5em;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+.cart-item h1
+{
+	margin: 0;
+}
+
+.cart-item
+{
+	height: 125px;
+	width: 100%;
+	background-color: hsl(0, 0%, 85%);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 5rem;
+}
+
+.cart-item > .item-img,
+.cart-item > .item-quantity,
+.cart-item > .item-price
+{
+	width: 100px;
+	white-space: nowrap;
+
+	display: flex;
+	justify-content: center;
+}
+
+.cart-item > .item-name
+{
+	flex-grow: 1;
+
+	padding: 0 7.5rem;
+}
+
+.cart-item > .item-quantity
+{
+	width: 300px;
+}
+
+.cart-item > .item-price,
+.cart-item > .item-quantity,
+.cart-item > .item-name
+{
+	color: #DC3C4D;
+	font-size: 2.25em;
+	font-family: monospace;
+}
 
 #footer
 {
