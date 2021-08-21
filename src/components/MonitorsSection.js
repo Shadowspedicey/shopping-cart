@@ -1,7 +1,7 @@
 import { useState } from "react";
 import uniqid from "uniqid";
 import ShopItem from "./ShopItem";
-import monitorsData from "./monitors.json";
+import monitorsData from "./data/monitors.json";
 
 const MonitorsSection = () =>
 {
