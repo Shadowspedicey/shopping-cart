@@ -1,0 +1,122 @@
+[
+	{
+		"title": "Razer Blackshark V2",
+		"image": "./images/headphones/Razer_Blackshark_V2.png",
+		"specs":
+		[
+			["Wireless", "No"],
+			["Noise cancelling", "Yes"]
+		],
+		"price": 76.99
+	},
+	{
+		"title": "HyperX Cloud II",
+		"image": "./images/headphones/HyperX_Cloud_II.png",
+		"specs":
+		[
+			["Wireless", "Yes"],
+			["Noise cancelling", "Yes"]
+		],
+		"price": 149.00
+	},
+	{
+		"title": "Steelseries Arctis 9X",
+		"image": "./images/headphones/Steelseries_Arctis_9X.png",
+		"specs":
+		[
+			["Wireless", "Yes"],
+			["Noise cancelling", "Yes"]
+		],
+		"price": 179.99
+	},
+	{
+		"title": "Razer Kraken",
+		"image": "./images/headphones/Razer_Kraken.png",
+		"specs":
+		[
+			["Wireless", "No"],
+			["Noise cancelling", "No"]
+		],
+		"price": 44.99
+	},
+	{
+		"title": "Logitech G PRO X",
+		"image": "./images/headphones/Logitech_G_PRO_X.png",
+		"specs":
+		[
+			["Wireless", "No"],
+			["Noise cancelling", "Yes"]
+		],
+		"price": 94.99
+	},
+	{
+		"title": "HyperX Cloud Stinger",
+		"image": "./images/headphones/HyperX_Cloud_Stinger.png",
+		"specs":
+		[
+			["Wireless", "No"],
+			["Noise cancelling", "Yes"]
+		],
+		"price": 49.99
+	},
+	{
+		"title": "Corsair Virtuoso XT",
+		"image": "./images/headphones/Corsair_Virtuoso_XT.png",
+		"specs":
+		[
+			["Wireless", "Yes"],
+			["Noise cancelling", "No"]
+		],
+		"price": 249.99
+	},
+	{
+		"title": "Razer Kaira Pro",
+		"image": "./images/headphones/Razer_Kaira_Pro.png",
+		"specs":
+		[
+			["Wireless", "Yes"],
+			["Noise cancelling", "No"]
+		],
+		"price": 174.99
+	},
+	{
+		"title": "Razer Barracuda X",
+		"image": "./images/headphones/Razer_Barracuda_X.png",
+		"specs":
+		[
+			["Wireless", "Yes"],
+			["Noise cancelling", "No"]
+		],
+		"price": 99.99
+	},
+	{
+		"title": "Corsair HS50",
+		"image": "./images/headphones/Corsair_HS50.png",
+		"specs":
+		[
+			["Wireless", "No"],
+			["Noise cancelling", "Yes"]
+		],
+		"price": 76.62
+	},
+	{
+		"title": "Logitech G432",
+		"image": "./images/headphones/Logitech_G432.png",
+		"specs":
+		[
+			["Wireless", "No"],
+			["Noise cancelling", "No"]
+		],
+		"price": 43.99
+	},
+	{
+		"title": "ASUS ROG Delta S",
+		"image": "./images/headphones/ASUS_ROG_Delta_S.png",
+		"specs":
+		[
+			["Wireless", "No"],
+			["Noise cancelling", "Yes"]
+		],
+		"price": 163.72
+	}
+]
