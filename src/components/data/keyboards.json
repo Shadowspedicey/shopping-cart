@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Razer Huntsman v2",
-		"image": "./images/monitors/Razer_Huntsman_v2.png",
+		"image": "./images/keyboards/Razer_Huntsman_v2.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
@@ -11,7 +11,7 @@
 	},
 	{
 		"title": "Cherry Stream",
-		"image": "./images/monitors/Cherry_Stream.png",
+		"image": "./images/keyboards/Cherry_Stream.png",
 		"specs":
 		[
 			["Backlighting", "No"],
@@ -21,7 +21,7 @@
 	},
 	{
 		"title": "Logitech Craft",
-		"image": "./images/monitors/Logitech_Craft.png",
+		"image": "./images/keyboards/Logitech_Craft.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
@@ -31,7 +31,7 @@
 	},
 	{
 		"title": "Apple Magic",
-		"image": "./images/monitors/Apple_Magic.png",
+		"image": "./images/keyboards/Apple_Magic.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
@@ -41,7 +41,7 @@
 	},
 	{
 		"title": "Logitech K780",
-		"image": "./images/monitors/Logitech_K780.png",
+		"image": "./images/keyboards/Logitech_K780.png",
 		"specs":
 		[
 			["Backlighting", "No"],
@@ -51,7 +51,7 @@
 	},
 	{
 		"title": "ASUS ROG Claymore II",
-		"image": "./images/monitors/ASUS_ROG_Claymore_II.png",
+		"image": "./images/keyboards/ASUS_ROG_Claymore_II.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
@@ -61,7 +61,7 @@
 	},
 	{
 		"title": "Corsair K100",
-		"image": "./images/monitors/Corsair_K100.png",
+		"image": "./images/keyboards/Corsair_K100.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
@@ -71,7 +71,7 @@
 	},
 	{
 		"title": "Redragon K552",
-		"image": "./images/monitors/Redragon_K552.png",
+		"image": "./images/keyboards/Redragon_K552.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
@@ -81,7 +81,7 @@
 	},
 	{
 		"title": "HyperX Alloy Elite Red",
-		"image": "./images/monitors/HyperX_Alloy_Elite_Red.png",
+		"image": "./images/keyboards/HyperX_Alloy_Elite_Red.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
@@ -91,7 +91,7 @@
 	},
 	{
 		"title": "SteelSeries Apex Pro",
-		"image": "./images/monitors/SteelSeries_Apex_Pro.png",
+		"image": "./images/keyboards/SteelSeries_Apex_Pro.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
@@ -101,7 +101,7 @@
 	},
 	{
 		"title": "Obinslab Anne Pro 2",
-		"image": "./images/monitors/Obinslab_Anne_Pro_2.png",
+		"image": "./images/keyboards/Obinslab_Anne_Pro_2.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
@@ -111,7 +111,7 @@
 	},
 	{
 		"title": "Logitech G413",
-		"image": "./images/monitors/Logitech_G413.png",
+		"image": "./images/keyboards/Logitech_G413.png",
 		"specs":
 		[
 			["Backlighting", "Yes"],
