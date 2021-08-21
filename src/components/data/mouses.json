@@ -1,0 +1,122 @@
+[
+	{
+		"title": "Razer DeathAdder V2",
+		"image": "./images/mouses/Razer_DeathAdder_V2.png",
+		"specs":
+		[
+			["DPI", "20,000"],
+			["Sensor", "Optical"]
+		],
+		"price": 47.97
+	},
+	{
+		"title": "Logitech G203 Lightsync",
+		"image": "./images/mouses/Logitech_G203_Lightsync.png",
+		"specs":
+		[
+			["DPI", "8,000"],
+			["Sensor", "Optical"]
+		],
+		"price": 21.99
+	},
+	{
+		"title": "Razer Naga Pro",
+		"image": "./images/mouses/Razer_Naga_Pro.png",
+		"specs":
+		[
+			["DPI", "20,00"],
+			["Sensor", "Razer Focus+"]
+		],
+		"price": 99.99
+	},
+	{
+		"title": "Corsair Ironclaw",
+		"image": "./images/mouses/Corsair_Ironclaw.png",
+		"specs":
+		[
+			["DPI", "18,00"],
+			["Sensor", "Optical"]
+		],
+		"price": 54.99
+	},
+	{
+		"title": "Logitech G502",
+		"image": "./images/mouses/Logitech_G502.png",
+		"specs":
+		[
+			["DPI", "25,600"],
+			["Sensor", "Hero 25K"]
+		],
+		"price": 41.99
+	},
+	{
+		"title": "Steelseries Sensei 310",
+		"image": "./images/mouses/Steelseries_Sensei_310.png",
+		"specs":
+		[
+			["DPI", "12,000"],
+			["Sensor", "Optical"]
+		],
+		"price": 49.45
+	},
+	{
+		"title": "Logitech G Pro Wireless",
+		"image": "./images/mouses/Logitech_G_Pro_Wireless.png",
+		"specs":
+		[
+			["DPI", "16,000"],
+			["Sensor", "Hero 16K"]
+		],
+		"price": 78.72
+	},
+	{
+		"title": "SteelSeries Rival 3",
+		"image": "./images/mouses/SteelSeries_Rival_3.png",
+		"specs":
+		[
+			["DPI", "8,500"],
+			["Sensor", "TrueMove"]
+		],
+		"price": 24.00
+	},
+	{
+		"title": "Apple Magic Mouse 2",
+		"image": "./images/mouses/Apple_Magic_Mouse_2.png",
+		"specs":
+		[
+			["DPI", "1,300"],
+			["Sensor", "Laser"]
+		],
+		"price": 60.45
+	},
+	{
+		"title": "Redragon M711",
+		"image": "./images/mouses/Redragon_M711.png",
+		"specs":
+		[
+			["DPI", "10,000"],
+			["Sensor", "Optical"]
+		],
+		"price": 17.83
+	},
+	{
+		"title": "Razer Basilisk V2",
+		"image": "./images/mouses/Razer_Basilisk_V2.png",
+		"specs":
+		[
+			["DPI", "20,000"],
+			["Sensor", "Optical"]
+		],
+		"price": 39.99
+	},
+	{
+		"title": "Razer Viper",
+		"image": "./images/mouses/Razer_Viper.png",
+		"specs":
+		[
+			["DPI", "16,000"],
+			["Sensor", "Optical"]
+		],
+		"price": 67.00
+	}
+]
