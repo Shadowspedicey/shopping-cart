@@ -6,6 +6,7 @@ import Headphones from "../images/Headphones.png";
 
 import ShopSection from "./ShopSection";
 import monitorsData from "./data/monitors.json";
+import keyboardsData from "./data/keyboards.json";
 
 const Shop = () =>
 {
@@ -41,6 +42,7 @@ const Shop = () =>
 			</nav>
 			<Switch>
 				<Route exact path="/shop/monitors"><ShopSection data={monitorsData}/></Route>
+				<Route exact path="/shop/keyboards"><ShopSection data={keyboardsData}/></Route>
 			</Switch>
 		</div>
 	);

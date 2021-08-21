@@ -13,7 +13,7 @@ const ShopItem = props =>
 					<div className="spec" key={uniqid()}><span>{spec[0]}:</span><span>{spec[1]}</span></div>
 				)
 			}
-			<h2 className="price">{props.info.price} £</h2>
+			<h2 className="price">£ {props.info.price.toFixed(2)}</h2>
 			<button className="add-to-cart">Add to cart</button>
 		</div>
 	);

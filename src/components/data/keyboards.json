@@ -1,0 +1,122 @@
+[
+	{
+		"title": "Razer Huntsman v2",
+		"image": "./images/monitors/Razer_Huntsman_v2.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "Analog mechanical"]
+		],
+		"price": 159.00
+	},
+	{
+		"title": "Cherry Stream",
+		"image": "./images/monitors/Cherry_Stream.png",
+		"specs":
+		[
+			["Backlighting", "No"],
+			["Switches", "Cherry SX scissor"]
+		],
+		"price": 19.49
+	},
+	{
+		"title": "Logitech Craft",
+		"image": "./images/monitors/Logitech_Craft.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "Scissor"]
+		],
+		"price": 179.00
+	},
+	{
+		"title": "Apple Magic",
+		"image": "./images/monitors/Apple_Magic.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "Scissor"]
+		],
+		"price": 99.00
+	},
+	{
+		"title": "Logitech K780",
+		"image": "./images/monitors/Logitech_K780.png",
+		"specs":
+		[
+			["Backlighting", "No"],
+			["Switches", "Tactile scissor"]
+		],
+		"price": 79.99
+	},
+	{
+		"title": "ASUS ROG Claymore II",
+		"image": "./images/monitors/ASUS_ROG_Claymore_II.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "RX Red"]
+		],
+		"price": 249.99
+	},
+	{
+		"title": "Corsair K100",
+		"image": "./images/monitors/Corsair_K100.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "Corsair OPX"]
+		],
+		"price": 229.99
+	},
+	{
+		"title": "Redragon K552",
+		"image": "./images/monitors/Redragon_K552.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "Red"]
+		],
+		"price": 42.99
+	},
+	{
+		"title": "HyperX Alloy Elite Red",
+		"image": "./images/monitors/HyperX_Alloy_Elite_Red.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "MX Red"]
+		],
+		"price": 119.00
+	},
+	{
+		"title": "SteelSeries Apex Pro",
+		"image": "./images/monitors/SteelSeries_Apex_Pro.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "OmniPoint"]
+		],
+		"price": 189.00
+	},
+	{
+		"title": "Obinslab Anne Pro 2",
+		"image": "./images/monitors/Obinslab_Anne_Pro_2.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "Gateron"]
+		],
+		"price": 99.00
+	},
+	{
+		"title": "Logitech G413",
+		"image": "./images/monitors/Logitech_G413.png",
+		"specs":
+		[
+			["Backlighting", "Yes"],
+			["Switches", "Romer-G Tactical"]
+		],
+		"price": 99.99
+	}
+]
