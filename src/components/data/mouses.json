@@ -24,7 +24,7 @@
 		"image": "./images/mouses/Razer_Naga_Pro.png",
 		"specs":
 		[
-			["DPI", "20,00"],
+			["DPI", "20,000"],
 			["Sensor", "Razer Focus+"]
 		],
 		"price": 99.99
@@ -34,7 +34,7 @@
 		"image": "./images/mouses/Corsair_Ironclaw.png",
 		"specs":
 		[
-			["DPI", "18,00"],
+			["DPI", "18,000"],
 			["Sensor", "Optical"]
 		],
 		"price": 54.99
