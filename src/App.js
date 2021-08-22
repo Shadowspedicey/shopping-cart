@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
+import ShopNav from "./components/ShopNav";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -10,6 +12,8 @@ import "./App.css";
 function App() 
 {
 	const [cart, setCart] = useState({nOfItems: 0, items: []});
+	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+	const isTooSmall = useMediaQuery({query: "(max-width: 860px)"});
 
 	const addToCart = (item, quantity) =>
 	{
@@ -71,13 +75,26 @@ function App()
 		decreaseQuantity,
 	};
 
+	const closeDropdown = () => setIsDropdownOpen(false);
+
 	return (
 		<div className="App">
 			<Router>
-				<Navbar cart={cart}/>
+				<Navbar cart={cart} isTooSmall={isTooSmall} setIsDropdownOpen={setIsDropdownOpen}/>
+				{
+					isDropdownOpen
+						?
+						<div style={{position: "absolute", width: "100%", height: "100%"}}>
+							<div id="dropdown-menu">
+								<ShopNav closeDropdown={closeDropdown}/>
+							</div>
+							<div id="drop-overlay" onClick={closeDropdown}></div>
+						</div>
+						: null
+				}
 				<Switch>
 					<Route exact path="/" component={Home}></Route>
-					<Route path="/shop"><Shop addToCart={addToCart}/></Route>
+					<Route path="/shop"><Shop addToCart={addToCart} isTooSmall={isTooSmall}/></Route>
 					<Route exact path="/cart"><Cart items={cart.items} removeFromCart={removeFromCart} quantityFns={quantityFns}/></Route>
 				</Switch>
 				<Footer/>

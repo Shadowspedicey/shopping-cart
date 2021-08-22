@@ -5,11 +5,20 @@ const Navbar = props =>
 {
 	return(
 		<nav id="navbar">
+			{ props.isTooSmall &&
+				<span id="dropdown" onClick={() => props.setIsDropdownOpen(true)}>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+					</svg>
+				</span>
+			}
 			<Link to="/" style={{height: "100%", display: "flex", alignItems: "center"}}><img src={Logo} alt="Shadows PC World Logo" className="logo-img"></img></Link>
-			<ul>
-				<li><Link to="/">Home</Link></li>
-				<li><Link to="/shop">Shop</Link></li>
-			</ul>
+			{ !props.isTooSmall &&
+				<ul>
+					<li><Link to="/">Home</Link></li>
+					<li><Link to="/shop/monitors">Shop</Link></li>
+				</ul>
+			}
 			<div className="nav-cart">
 				<Link to="/cart">
 					<div className="nav-cart-container">
