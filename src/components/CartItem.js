@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
+import isMobile from "is-mobile";
 
 const CartItem = props =>
 {
 	const [isHovered, setIsHovered] = useState(false);
 
 	useEffect(() => props.info.quantity === 0 ? props.removeFromCart(props.info.title) :  null);
+	useEffect(() => isMobile() ? setIsHovered(true) : null, [isHovered]);
 
 	return(
 		<div className="cart-item" style={{backgroundColor: "hsl(0, 0%, 85%)"}} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>

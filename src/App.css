@@ -104,7 +104,7 @@
 
 #navbar > ul
 {
-	width: 300px;
+	width: 40%;
 
 	text-decoration: none;
 	
@@ -122,11 +122,20 @@
 
 #navbar li
 {
+	transition: transform 0.125s ease-in-out;
+
 	list-style-type: none;
 	font-size: 2.25em;
-	font-family: sans-serif;
+	font-family: "Moon";
+	letter-spacing: 1.5px;
 	font-weight: bold;
 }
+
+#navbar li:hover
+{
+	transform: scale(1.125);
+}
+
 
 #navbar > .nav-cart
 {
@@ -161,12 +170,11 @@
 #home
 {
 	height: 100%;
-	background-color: #DC3C4D;
 
-	color: black;
+	color: hsl(0, 0%, 90%);
 	text-align: center;
 	font-size: 3.25em;
-	font-family: monospace;
+	font-family: "LemonMilk";
 	font-weight: 600;
 
 	display: flex;
@@ -175,6 +183,22 @@
 	flex-grow: 1;
 
 	padding: 0 7.5rem;
+}
+
+#home::after
+{
+	content: "";
+	width: 100%;
+	height: 100%;
+
+	background-image: url(./images/BG.png);
+	background-size: cover;
+	background-position: center 55%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
 .shop-link
@@ -243,8 +267,9 @@
 .nav-shop-sections a
 {
 	height: 101%;
+
+	color: black;
 	text-decoration: none;
-	color: hsl(0, 0%, 25%);
 
 	display: flex;
 	align-items: center;
@@ -253,7 +278,7 @@
 .nav-shop-section-text
 {
 	font-size: 2rem;
-	font-family: monospace;
+	font-family: "ModerneSans";
 	font-weight: 700;
 
 	margin-left: 1rem;
@@ -293,7 +318,7 @@
 {
 	color: #DC3C4D;
 	font-size: 1.5em;
-	font-family: monospace;
+	font-family: "Noway";
 
 	margin: 0 0 0.25rem 0;
 }
@@ -318,7 +343,7 @@
 	width: 100%;
 
 	font-size: 1.4em;
-	font-family: monospace;
+	font-family: "Noway";
 
 	display: flex;
 	justify-content: space-between;
@@ -521,14 +546,14 @@ input[type=number] {
 {
 	color: #DC3C4D;
 	font-size: 2.25em;
-	font-family: monospace;
+	font-family: "monospace";
 }
 
 #footer
 {
 	width: 100%;
 	height: 50px;
-	background-color: hsl(0, 0%, 90%);
+	background: transparent;
 
 	font-size: 1.5em;
 	font-weight: 600;
@@ -583,6 +608,10 @@ input[type=number] {
 
 @media (max-width: 1420px)
 {
+	#home
+	{
+		font-size: 36px;
+	}
 	.nav-shop-sections .nav-shop-section-text
 	{
 		font-size: 25px;
@@ -595,6 +624,10 @@ input[type=number] {
 
 @media (max-width: 1175px)
 {
+	#home
+	{
+		font-size: 40px;
+	}
 	#navbar
 	{
 		height: 75px;
@@ -664,6 +697,10 @@ input[type=number] {
 
 @media (max-width: 780px)
 {
+	#home
+	{
+		font-size: 25px;
+	}
 	#cart
 	{
 		font-size: 6.75px;
@@ -684,6 +721,11 @@ input[type=number] {
 
 @media (max-width: 560px)
 {
+	#home
+	{
+		font-size: 25px;
+		padding: 0 1.75rem;
+	}
 	#cart
 	{
 		font-size: 5.75px;

@@ -18,3 +18,24 @@ html, body
 {
 	height: 100%;
 }
+
+@font-face {
+	font-family: "LemonMilk";
+	src: url(./fonts/LemonMilk.otf);
+}
+@font-face {
+	font-family: "Moon";
+	src: url(./fonts/Moon.otf);
+}
+@font-face {
+	font-family: "Giraffey";
+	src: url(./fonts/Giraffey.otf);
+}
+@font-face {
+	font-family: "ModerneSans";
+	src: url(./fonts/ModerneSans.ttf);
+}
+@font-face {
+	font-family: "Noway";
+	src: url(./fonts/Noway.otf);
+}

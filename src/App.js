@@ -33,7 +33,6 @@ function App()
 
 	const removeFromCart = name =>
 	{
-		console.log(cart);
 		setCart
 		(
 			{
@@ -42,7 +41,6 @@ function App()
 				items: cart.items.filter(item => item.title !== name),
 			}
 		);
-		setTimeout(() => console.log(cart), 600);
 	};
 
 	const increaseQuantity = name =>
