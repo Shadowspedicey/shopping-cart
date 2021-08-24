@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import uniqid from "uniqid";
 import CartItem from "./CartItem";
 
+
+// AsSS
 const Cart = props =>
 {
 	const [total, setTotal] = useState(0);

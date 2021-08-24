@@ -1,16 +1,16 @@
 import { Switch, Route } from "react-router-dom";
 
 import ShopSection from "./ShopSection";
-import monitorsData from "./data/monitors.json";
-import keyboardsData from "./data/keyboards.json";
-import mousesData from "./data/mouses.json";
-import headphonesData from "./data/headphones.json";
+import monitorsData from "../data/monitors.json";
+import keyboardsData from "../data/keyboards.json";
+import mousesData from "../data/mouses.json";
+import headphonesData from "../data/headphones.json";
 import ShopNav from "./ShopNav";
 
 const Shop = props =>
 {
 	return(
-		<div id="shop">
+		<div id="shop">145
 			{ !props.isTooSmall && <ShopNav/>}
 			<Switch>
 				<Route exact path="/shop/monitors"><ShopSection data={monitorsData} addToCart={props.addToCart}/></Route>
