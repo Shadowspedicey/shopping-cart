@@ -11,74 +11,15 @@ import "./App.css";
 
 function App() 
 {
-	const [cart, setCart] = useState({nOfItems: 0, items: []});
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 	const isTooSmall = useMediaQuery({query: "(max-width: 860px)"});
-
-	const addToCart = (item, quantity) =>
-	{
-		if (cart.items.filter(_item => _item.title === item.title)[0]) return;
-		setCart
-		(
-			{
-				nOfItems: cart.nOfItems + quantity,
-				items:
-				[
-					...cart.items,
-					{...item, "quantity": quantity},
-				]
-			}
-		);
-	};
-
-	const removeFromCart = name =>
-	{
-		setCart
-		(
-			{
-				...cart,
-				nOfItems: cart.nOfItems - cart.items.filter(item => item.title === name)[0].quantity,
-				items: cart.items.filter(item => item.title !== name),
-			}
-		);
-	};
-
-	const increaseQuantity = name =>
-	{
-		setCart
-		(
-			{
-				...cart,
-				nOfItems: cart.nOfItems + 1,
-				items: cart.items.map(item => item.title === name ? {...item, quantity: item.quantity + 1} : item)
-			}
-		);
-	};
-
-	const decreaseQuantity = name =>
-	{
-		setCart
-		(
-			{
-				...cart,
-				nOfItems: cart.nOfItems - 1,
-				items: cart.items.map(item => item.title === name ? {...item, quantity: item.quantity - 1} : item)
-			}
-		);
-	};
-
-	const quantityFns =
-	{
-		increaseQuantity,
-		decreaseQuantity,
-	};
 
 	const closeDropdown = () => setIsDropdownOpen(false);
 
 	return (
 		<div className="App">
 			<Router>
-				<Navbar cart={cart} isTooSmall={isTooSmall} setIsDropdownOpen={setIsDropdownOpen}/>
+				<Navbar isTooSmall={isTooSmall} setIsDropdownOpen={setIsDropdownOpen}/>
 				{
 					isDropdownOpen
 						?
@@ -92,8 +33,8 @@ function App()
 				}
 				<Switch>
 					<Route exact path="/" component={Home}></Route>
-					<Route path="/shop"><Shop addToCart={addToCart} isTooSmall={isTooSmall}/></Route>
-					<Route exact path="/cart"><Cart items={cart.items} removeFromCart={removeFromCart} quantityFns={quantityFns}/></Route>
+					<Route path="/shop"><Shop isTooSmall={isTooSmall}/></Route>
+					<Route exact path="/cart"><Cart/></Route>
 				</Switch>
 				<Footer/>
 			</Router>

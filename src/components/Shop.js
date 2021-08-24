@@ -10,13 +10,13 @@ import ShopNav from "./ShopNav";
 const Shop = props =>
 {
 	return(
-		<div id="shop">145
+		<div id="shop">
 			{ !props.isTooSmall && <ShopNav/>}
 			<Switch>
-				<Route exact path="/shop/monitors"><ShopSection data={monitorsData} addToCart={props.addToCart}/></Route>
-				<Route exact path="/shop/keyboards"><ShopSection data={keyboardsData}  addToCart={props.addToCart}/></Route>
-				<Route exact path="/shop/mouses"><ShopSection data={mousesData}addToCart={props.addToCart}/></Route>
-				<Route exact path="/shop/headphones"><ShopSection data={headphonesData} addToCart={props.addToCart}/></Route>
+				<Route exact path="/shop/monitors"><ShopSection data={monitorsData}/></Route>
+				<Route exact path="/shop/keyboards"><ShopSection data={keyboardsData} /></Route>
+				<Route exact path="/shop/mouses"><ShopSection data={mousesData}/></Route>
+				<Route exact path="/shop/headphones"><ShopSection data={headphonesData}/></Route>
 			</Switch>
 		</div>
 	);

@@ -1,24 +1,24 @@
 import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import uniqid from "uniqid";
 import CartItem from "./CartItem";
 
-
-// AsSS
-const Cart = props =>
+const Cart = () =>
 {
+	const items = useSelector(state => state.cart.items);
 	const [total, setTotal] = useState(0);
-	const calculateTotal = () => setTotal([...props.items].reduce((total, item) => total + (item.price * item.quantity), 0));
+	const calculateTotal = () => setTotal([...items].reduce((total, item) => total + (item.price * item.quantity), 0));
 
-	useEffect(calculateTotal, [props.items]);
+	useEffect(calculateTotal, [items]);
 
 	return(
 		<div id="cart">
 			<div className="cart-item cart-header">
 				<h1 className="item-img">#</h1><h1 className="item-name">Item</h1><h1 className="item-quantity">Quantity</h1><h1 className="item-price">Price</h1>
 			</div>
-			{props.items.map(item => <CartItem info={item} key={uniqid()} removeFromCart={props.removeFromCart} quantityFns={props.quantityFns}/>)}
+			{items.map(item => <CartItem info={item} key={uniqid()}/>)}
 			{
-				props.items.length > 0 
+				items.length > 0 
 					? <div className="cart-item cart-footer" style={{justifyContent: "flex-end"}}><h1 className="total">Total: £ {total.toFixed(2)}</h1></div>
 					: null
 			}

@@ -11,9 +11,7 @@ const ShopSection = props =>
 	return(
 		<div className="shop-section">
 			{
-				items.map(item =>
-					<ShopItem info={item} key={uniqid()} addToCart={props.addToCart}/>
-				)
+				items.map(item => <ShopItem info={item} key={uniqid()}/>)
 			}
 		</div>
 	);

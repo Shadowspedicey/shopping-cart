@@ -1,9 +1,13 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import uniqid from "uniqid";
+
+import { addToCart } from "../state/actions/cartActions";
 
 const ShopItem = props =>
 {
 	const [quantity, setQuantity] = useState(1);
+	const dispatch = useDispatch();
 
 	return(
 		<div className="shop-item">
@@ -23,7 +27,7 @@ const ShopItem = props =>
 					<input type="number" min="1" value={quantity} readOnly></input>
 					<button onClick={quantity === 1 ? null : () => setQuantity(quantity - 1)}>-</button>
 				</div>
-				<button className="add-to-cart" onClick={() => props.addToCart(props.info, quantity)}>Add to cart</button>
+				<button className="add-to-cart" onClick={() => dispatch(addToCart(props.info, quantity))}>Add to cart</button>
 			</div>
 		</div>
 	);
