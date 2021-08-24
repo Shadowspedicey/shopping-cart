@@ -1,6 +1,7 @@
-import { useState } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
+import { useSelector, useDispatch } from "react-redux";
+import { closeDropdown } from "./state/actions/dropdownActions";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
@@ -11,23 +12,22 @@ import "./App.css";
 
 function App() 
 {
-	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+	const isDropdownOpen = useSelector(state => state.dropdown);
 	const isTooSmall = useMediaQuery({query: "(max-width: 860px)"});
-
-	const closeDropdown = () => setIsDropdownOpen(false);
+	const dispatch = useDispatch();
 
 	return (
 		<div className="App">
 			<Router>
-				<Navbar isTooSmall={isTooSmall} setIsDropdownOpen={setIsDropdownOpen}/>
+				<Navbar isTooSmall={isTooSmall}/>
 				{
 					isDropdownOpen
 						?
 						<div style={{position: "absolute", width: "100%", height: "100%"}}>
 							<div id="dropdown-menu">
-								<ShopNav closeDropdown={closeDropdown}/>
+								<ShopNav/>
 							</div>
-							<div id="drop-overlay" onClick={closeDropdown}></div>
+							<div id="drop-overlay" onClick={() => dispatch(closeDropdown())}></div>
 						</div>
 						: null
 				}

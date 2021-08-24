@@ -1,10 +1,12 @@
 import { combineReducers  } from "redux";
 import cartReducer from "./cart";
+import dropdownReducer from "./dropdown";
 
 const reducers = combineReducers
 (
 	{
-		cart: cartReducer
+		cart: cartReducer,
+		dropdown: dropdownReducer
 	}
 );
 
